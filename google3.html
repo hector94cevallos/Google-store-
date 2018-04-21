@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <heald>
+        <script type"text/javascript"
+        src="http://cdm.jsdelivr.net/npm/vue"></script>
+
+    </heald>
+        
+</html>
+<body>
+    <main>
+        <table>
+            <thead>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+            </thead>
+            <tbody>
+                <tr v-for="(iten ,idx) in users">
+                    <td>{{iten,nombre}}</td>
+                    <td>{{iten,apellido}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        {{data}}
+    </main>
+</body>
+<script type="text/javascritp">
+    new vue({
+        el='main',
+        data:{
+            user:[
+            {'nombre':'Hector','apellido':'Cevallos'},
+            {'nombre':'Emely','apellido':'Jimenez'},
+            {'nombre':'Jesus','apellido':'Guerrero'},
+            ]
+            
+        }
+    });
+</script>
